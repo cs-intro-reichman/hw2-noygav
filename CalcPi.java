@@ -11,7 +11,9 @@ public class CalcPi {
 			pi += (double)sign / (double)div;
 			div += 2;
 		 }
-		 System.out.println("pi according to Java: " + Math.PI);
-		 System.out.println("pi, approximated: " + pi * 4);
+		 // Print Java's PI and the approximation; right-align the approximated value so
+		 // it lines up visually under the Java PI value (padding to match expected output).
+		 System.out.printf("pi according to Java: %s%n", Math.PI);
+		 System.out.printf("pi, approximated: %20s%n", Double.toString(pi * 4));
 }
 }

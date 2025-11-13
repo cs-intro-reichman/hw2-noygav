@@ -11,21 +11,24 @@ public class Cheers
                 String rules = "AEFHILMNORSX";
                 for (int i=0; i<length; i++)
                 {
-                        System.out.print("Give me " );
+                        System.out.print("Give me ");
+                        // print "an " for letters in rules, otherwise print "a  " (two spaces)
                         if( rules.indexOf(name.charAt(i)) >= 0 )
-                        { 
+                        {
                                 System.out.print("an ");
                         }
                         else
                         {
-                                System.out.print("a ");
-                        }       
-                         System.out.println(name.charAt(i)+ ":" + name.charAt(i) + "!");
+                                System.out.print("a  ");
+                        }
+                        // print with a space after the colon to match expected output
+                        System.out.println(name.charAt(i) + ": " + name.charAt(i) + "!");
                 }
-                System.out.println("What does that spell? ");
+                // no trailing space after the question mark
+                System.out.println("What does that spell?");
                 for (int j=0; j<count; j++)
                 {
-                        System.out.println(name + "!!!" );
+                        System.out.println(name + "!!!");
                 }
         }
 }
